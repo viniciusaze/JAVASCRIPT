@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightslategray; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Criando meu primeiro Script.</p>
+
+    <script>
+       var n1 = Number.parseInt (window.prompt('Digite o primeiro número')) 
+       var n2 = Number.parseInt (window.prompt('Digite o segundo número'))
+       
+       // O comando prompt retorna uma string, mesmo que o digitado for um número
+
+       // Foi usado o comando Number.parseInt(n) para transformar a variável em numeros Inteiros, ou Number.parseFloat(n) para numeros reais
+
+       // O comando somente Number(n) também funciona
+
+       // Para converter uma var para string, usamos o comando n.toString() ou somente o String(n)
+
+       var s = n1 + n2
+       window.alert(`O valor da soma entre ${n1} e ${n2} é de ${s}`) 
+
+       // No exercício acima foi usado o placeholder ${} e a declaração entre crases `` para declarar as variaveis dentro da frase, ao inves de 'frase' + var + 'frase'
+       
+
+       // (number + number) o + faz adição
+       // (string + string) o + faz concatenação
+       
+    </script>
+</body>
+</html>
