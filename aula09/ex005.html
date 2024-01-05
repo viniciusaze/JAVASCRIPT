@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(64, 77, 29);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Iniciando meus estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <div id="msg">Clique em mim</div>
+    <p name="par">Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <script>
+        // Selecionando DOM por Marca
+         var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Está escrito assim: ' + p1.innerText) 
+        // Se quiser usar o negrito, usar o comendo innerHTML
+
+        // Selecionando DOM por ID
+        var d = window.document.getElementById('msg')
+        d.style.background = 'black'
+
+        //Selecionando DOM por Nome
+        var p1 = window.document.getElementsByName('par')[0]
+        p1.style.fontSize = '30pt'
+
+        //Selecionando DOM por Seletor
+        /* var d = window.document.querySelector('div#msg')
+        d.style.color = 'green*/
+
+    </script>
 </body>
 </html>
