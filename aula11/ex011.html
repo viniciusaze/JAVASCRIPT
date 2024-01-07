@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Países</title>
+</head>
+<body>
+    <h1>País</h1>
+    Informe seu país:<input type="text" name="pais" id="txp">
+    <input type="button" value="Enviar" onclick="cidadania()">
+    <div id="res">
+        
+    </div>
+
+    <script>
+        function cidadania() {
+            var pais = window.document.getElementById('txp').value
+            var r = window.document.getElementById('res')
+            res.innerHTML = `Sua Cidadania:`
+
+            if (pais.toLowerCase() === 'brasil') {
+                res.innerHTML += ' Você é Brasileiro'
+            } else {
+                res.innerHTML += ' Você é estrangeiro'
+        }
+    }
+    //Usado o toLowerCase para aceitar os dados caso o usuário informe em letras minúsculas
+    </script>
+</body>
+</html>
