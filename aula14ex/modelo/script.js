@@ -14,8 +14,13 @@ function contar(){
         var f = Number(NumFinal.value)
         var p = Number(passo.value) // Para tranformar a string em valor numerico
 
-        if (passo<=0){
+        if (passo <= 0){
             alert('Passo inválido')
+            p = 1
+        }
+
+        if (passo >= NumFinal){
+            alert('Passo maior que o número final')
             p = 1
         }
 
