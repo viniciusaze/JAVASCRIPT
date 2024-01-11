@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+
+    <section>
+        <div>
+            <h1>Multiplicador</h1>
+            <p><label for="inum">Digite o número:</label> <input type="number" name="num" id="inum"></p>
+            <input type="submit" value="Calcular" onclick="calcular()">
+            <input type="button" value="Limpar Resultados" onclick="limpar()">
+        </div>
+        <div id="tabuada">
+            <p>Cálculo:</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;Curso em Vídeo</p>
+    </footer>
+    
+    <script src="script.js"></script> <!-- Chamada para arquivo JS externo-->
+</body>
+</html>
